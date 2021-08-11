@@ -1,5 +1,12 @@
+:root {
+    --blue: #2979ff;
+    --purple: #d500f9;
+    --orange: #ff9100;
+
+}
+
 body {
-    height:100vh;
+    height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -7,11 +14,63 @@ body {
     font-size: 24px;
 }
 
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-wrapper {
+}
+
+/* Color Buttons */
+
+.colors-container-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.colors-container {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue-btn, .purple-btn, .orange-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.blue-btn {
+    border: 3px solid rgba(0,0,0,0.3);
+    background-color: var(--blue);
+}
+
+.purple-btn {
+    border: 3px solid rgba(0,0,0,0.3);
+    background-color: var(--purple);
+}
+
+.orange-btn {
+    border: 3px solid rgba(0,0,0,0.3);
+    background-color: var(--orange);
+}
+
+
 .container {
     display: flex; 
     text-align: center;
     justify-content: center;
-    height: 70%;
+    height: 120px;
+    margin-bottom: 10px;
     align-items: center;
     flex-wrap: nowrap;
 }
@@ -20,6 +79,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
 }
 
 .button {
@@ -28,6 +88,7 @@ body {
     cursor: pointer; 
     width: 120px;
     text-align:center;
+    transition: background-color 1.5s;
 }
 
 .container2 {
@@ -72,19 +133,3 @@ body {
 .underline {
     text-decoration: underline;
 }
-
-/* colors */
-
-/*
-purple: #d500f9
-
-blue: #2979ff
-
-green: #00e676
-
-orange: #ff9100
-
-yellow: #ffea00
-
-red: #ff1744
-*/
